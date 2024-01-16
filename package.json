@@ -1,0 +1,30 @@
+{
+  "name": "maket4",
+  "version": "1.0.0",
+  "description": "this is maket4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatviyVovchuk/maket4.git"
+  },
+  "author": "Matviy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatviyVovchuk/maket4/issues"
+  },
+  "homepage": "https://github.com/MatviyVovchuk/maket4#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
