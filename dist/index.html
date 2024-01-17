@@ -18,39 +18,81 @@
   </head>
   <body>
     <div class="wrapper">
-        <header>
-            <div class="header-content">
-                <div class="main-menu">
-                    <img class="logo-image" src="images/logo_Oxit.png" alt="oxit logo">
-                    <nav class="menu-nav">
-                        <ul class="menu-ul">
-                            <li><a href="#">Головна</a></li>
-                            <li><a href="#">Програма курсу</a></li>
-                            <li><a href="#">Відгуки про курс</a></li>
-                            <li><a href="#">Відео</a></li>
-                            <li><a href="#">Ментори</a></li>
-                            <li><a class="submit-application" href="#">Подати заявку</a></li>
-                        </ul>
-                    </nav>
-                    <div class="menu-burger">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main>
-          <div class="registration-container">
-            <div class="registration-information">
-
-            </div>
-            <div class="registration-form">
-              
+      <header>
+        <div class="header-content">
+          <div class="main-menu">
+            <img
+              class="logo-image"
+              src="images/logo_Oxit.png"
+              alt="oxit logo"
+            />
+            <nav class="menu-nav">
+              <ul class="menu-ul">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Програма курсу</a></li>
+                <li><a href="#">Відгуки про курс</a></li>
+                <li><a href="#">Відео</a></li>
+                <li><a href="#">Ментори</a></li>
+                <li>
+                  <a class="submit-application" href="#">Подати заявку</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="menu-burger">
+              <span></span>
             </div>
           </div>
-        </main>
-        <footer>
+        </div>
+      </header>
+      <main>
+        <div id="registration_container">
+          <div class="registration-information-block">
+            <h1>Курси програмування у Луцьку</h1>
+            <p>
+              Сфера ІТ розвивається максимально швидко. Зараз дуже популярно
+              здобувати освіту, що повязана з ІТ. Існує лише одна проблема брак
+              дійсно кваліфікованих спеціалістів в Україні. Під час навчання в
+              університеті ми отримуємо мало практики і "живих", реальних
+              кейсів. ІТ школа ОХІТ створила таку методику навчання, при якій за
+              короткий час ви отримаєте необхідні знання, щоб стати ІТ
+              спеціалістом. Чекаємо вас на нших курсах з програмування в Луцьку.
+              Старт наступного курсу 3 серпня.
+            </p>
+          </div>
+          <div class="registration-form-block">
+            <form action="/submit_form" id="registration_form" method="post">
+              <h2>Зареєструватися на курси</h2>
 
-        </footer>
+              <div class="field-container">
+                <label for="field_firstname">Ім'я</label>
+                <input name="field_firstname" id="field_firstname" type="text" placeholder="Ім'я" required/>
+              </div>
+              <div class="field-container">
+                <label for="field_lastname">Прізвище</label>
+                <input name="field_lastname" id="field_lastname" type="text" placeholder="Прізвище" required/>
+              </div>
+              <div class="field-container">
+                <label for="field_interesting">Мене більше цікавить</label>
+                <input name="field_interesting" id="field_interesting" type="text" placeholder="Developer or QA" required/>
+              </div>
+              <div class="field-container">
+                <label for="field_phone">Номер телефону</label>
+                <input name="field_phone" id="field_phone" type="text" placeholder="Номер телефону: +38 ХХХ ХХ ХХ ХХХ" required/>
+              </div>
+              <div class="field-container">
+                <label for="field_email">Email</label>
+                <input name="field_email" id="field_email" type="email" placeholder="Email" required/>
+              </div>
+              <div class="field-container">
+                <input name="field_rules" id="field_rules" type="checkbox" required/>
+                <label for="field_rules">Я погоджуюсь із <a href="#">Політикою Конфіденційності</a></label>
+              </div>
+              <button id="submit_button" class="submit-button" type="submit">ЗАРЕЄСТРУВАТИСЯ ЗАРАЗ</button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
     </div>
 
     <script src="js/main.js"></script>
