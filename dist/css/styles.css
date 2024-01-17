@@ -145,7 +145,8 @@ header .header-content .main-menu .menu-burger.active::after {
     display: flex;
     align-items: start;
     justify-content: space-between;
-    width: 320px;
+    width: 100%;
+    margin: 0 20px;
   }
   header .header-content .main-menu .menu-burger {
     display: flex;
