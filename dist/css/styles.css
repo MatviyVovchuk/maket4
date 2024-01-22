@@ -212,8 +212,6 @@ main #registration_container .registration-form-block form .checkbox a:hover {
   text-decoration: underline;
 }
 main #registration_container .registration-form-block form b {
-  position: relative;
-  top: 2px;
   font-weight: bold;
   quotes: none;
   cursor: pointer;
@@ -238,6 +236,53 @@ main #registration_container .registration-form-block form button:hover {
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+main #site-development-container {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #site-development-container .site-development-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1190px;
+  padding: 50px 15px;
+}
+main #site-development-container .site-development-block h1 {
+  font-weight: 400;
+}
+main #site-development-container .site-development-block .site-dev-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+main #site-development-container .site-development-block .site-dev-content .dev-content-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 100%;
+  margin: 20px;
+  height: 350px;
+}
+main #site-development-container .site-development-block .site-dev-content .dev-content-item h2 {
+  font-weight: 400;
+  color: #7f7f7f;
+}
+main #site-development-container .site-development-block .site-dev-content .dev-content-item hr {
+  width: 100%;
+  border: 1px solid #3498db;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+main #site-development-container .site-development-block .site-dev-content .dev-content-item p {
+  text-align: center;
+  font-weight: 200;
+  color: #7f7f7f;
+}
 
 @media screen and (max-width: 1250px) {
   header .header-content {
@@ -254,6 +299,21 @@ main #registration_container .registration-form-block form button:hover {
   }
   main #registration_container .registration-form-block {
     margin: 40px 0;
+  }
+  main #site-development-container .site-development-block {
+    padding: 50px 0px;
+  }
+  main #site-development-container .site-development-block .site-dev-content {
+    width: 950px;
+  }
+  main #site-development-container .site-development-block .site-dev-content .dev-content-item h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  main #site-development-container .site-development-block .site-dev-content .dev-content-item hr {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 260px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -309,6 +369,27 @@ main #registration_container .registration-form-block form button:hover {
   header .header-content .main-menu .menu-nav .menu-ul li {
     margin: 5px 0;
   }
+  main #site-development-container .site-development-block .site-dev-content {
+    width: 800px;
+  }
+  main #site-development-container .site-development-block .site-dev-content .dev-content-item {
+    margin: 20px 10px;
+  }
+  main #site-development-container .site-development-block .site-dev-content .dev-content-item h2 {
+    font-size: 16px;
+  }
+  main #site-development-container .site-development-block .site-dev-content .dev-content-item hr {
+    width: 240px;
+  }
+}
+@media screen and (max-width: 850px) {
+  main #site-development-container .site-development-block .site-dev-content {
+    width: 600px;
+  }
+  main #site-development-container .site-development-block .site-dev-content .dev-content-item {
+    height: auto;
+    margin: 0 10px;
+  }
 }
 @media screen and (max-width: 750px) {
   main #registration_container .registration-information-block {
@@ -338,7 +419,7 @@ main #registration_container .registration-form-block form button:hover {
     width: 400px;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   main #registration_container .registration-information-block {
     width: 95%;
     margin-bottom: 20px;
@@ -348,6 +429,16 @@ main #registration_container .registration-form-block form button:hover {
   }
   main #registration_container .registration-information-block p {
     width: auto;
+  }
+  main #site-development-container .site-development-block h1 {
+    font-size: 22px;
+  }
+  main #site-development-container .site-development-block .site-dev-content {
+    width: 400px;
+  }
+  main #site-development-container .site-development-block .site-dev-content .dev-content-item {
+    height: auto;
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -361,6 +452,9 @@ main #registration_container .registration-form-block form button:hover {
     width: 280px;
   }
   main #registration_container .registration-form-block form .checkbox {
+    width: 320px;
+  }
+  main #site-development-container .site-development-block .site-dev-content {
     width: 320px;
   }
 }
