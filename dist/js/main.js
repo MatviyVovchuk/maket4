@@ -3065,37 +3065,6 @@ $(".menu-burger").on("click", function () {
 /* SLIDER (Site development) */
 
 $(document).ready(function(){
-
-  // $(".site-dev-content").slick({
-  //   dots: false,
-  //   infinite: true,
-  //   arrows: true,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   responsive: [
-  //     {
-  //       breakpoint: 851,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //         arrows: false,
-  //         infinite: true,
-  //         dots: true,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 601,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         infinite: true,
-  //         dots: true,
-  //         arrows: false,
-  //       },
-  //     },
-  //   ],
-  // });
-  
   var screenWidth = $(window).width();
 
   function initializeSlider() {
