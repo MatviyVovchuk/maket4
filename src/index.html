@@ -64,33 +64,42 @@
               <h2>Зареєструватися на курси</h2>
 
               <div class="field-container">
-                <label for="field_firstname">Ім'я</label>
+                <label for="field_firstname">Ім'я <b>*</b></label>
+                
                 <input name="field_firstname" id="field_firstname" type="text" placeholder="Ім'я" required/>
+                
               </div>
+
               <div class="field-container">
-                <label for="field_lastname">Прізвище</label>
+                <label for="field_lastname">Прізвище <b>*</b></label>
                 <input name="field_lastname" id="field_lastname" type="text" placeholder="Прізвище" required/>
               </div>
+
               <div class="field-container">
-                <label for="field_interesting">Мене більше цікавить</label>
+                <label for="field_interesting">Мене більше цікавить <b>*</b></label>
                 <input name="field_interesting" id="field_interesting" type="text" placeholder="Developer or QA" required/>
               </div>
+
               <div class="field-container">
-                <label for="field_phone">Номер телефону</label>
+                <label for="field_phone">Номер телефону <b>*</b></label>
                 <input name="field_phone" id="field_phone" type="text" placeholder="Номер телефону: +38 ХХХ ХХ ХХ ХХХ" required/>
               </div>
+
               <div class="field-container">
-                <label for="field_email">Email</label>
+                <label for="field_email">Email <b>*</b></label>
                 <input name="field_email" id="field_email" type="email" placeholder="Email" required/>
               </div>
-              <div class="field-container">
+
+              <div class="field-container checkbox">
                 <input name="field_rules" id="field_rules" type="checkbox" required/>
-                <label for="field_rules">Я погоджуюсь із <a href="#">Політикою Конфіденційності</a></label>
+                <label for="field_rules">Я погоджуюсь із <a href="#">Політикою Конфіденційності</a> <b>*</b></label>
               </div>
+
               <button id="submit_button" class="submit-button" type="submit">ЗАРЕЄСТРУВАТИСЯ ЗАРАЗ</button>
             </form>
           </div>
         </div>
+        
       </main>
       <footer></footer>
     </div>

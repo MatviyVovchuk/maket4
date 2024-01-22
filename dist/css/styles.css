@@ -162,16 +162,81 @@ main #registration_container .registration-form-block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 57px;
+  margin-left: 60px;
 }
-main #registration_container .registration-form-block #registration_form {
+main #registration_container .registration-form-block form {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-main #registration_container .registration-form-block #registration_form h2 {
+main #registration_container .registration-form-block form h2 {
   font-size: 1.3em;
   font-weight: 600;
+}
+main #registration_container .registration-form-block form label {
+  margin-bottom: 5px;
+  display: block;
+}
+main #registration_container .registration-form-block form input {
+  padding: 15px;
+  width: 600px;
+  border-radius: 5px;
+  border: 1px solid #bababa;
+}
+main #registration_container .registration-form-block form input:focus {
+  outline: none;
+  border: 1px solid #337ab7;
+  box-shadow: 0 0 5px rgba(51, 122, 183, 0.5);
+}
+main #registration_container .registration-form-block form .field-container {
+  margin-top: 10px;
+}
+main #registration_container .registration-form-block form .checkbox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+main #registration_container .registration-form-block form .checkbox input {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 15px;
+}
+main #registration_container .registration-form-block form .checkbox label {
+  margin-bottom: 0px;
+}
+main #registration_container .registration-form-block form .checkbox a {
+  text-decoration: none;
+  color: #337ab7;
+}
+main #registration_container .registration-form-block form .checkbox a:hover {
+  text-decoration: underline;
+}
+main #registration_container .registration-form-block form b {
+  position: relative;
+  top: 2px;
+  font-weight: bold;
+  quotes: none;
+  cursor: pointer;
+  color: red;
+}
+main #registration_container .registration-form-block form button {
+  align-self: center;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #337ab7;
+  height: 50px;
+  width: 370px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.4s;
+  padding: 10px 15px;
+}
+main #registration_container .registration-form-block form button:hover {
+  color: #337ab7;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 1250px) {
@@ -188,7 +253,7 @@ main #registration_container .registration-form-block #registration_form h2 {
     align-items: center;
   }
   main #registration_container .registration-form-block {
-    margin: 30px 0;
+    margin: 40px 0;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -245,6 +310,34 @@ main #registration_container .registration-form-block #registration_form h2 {
     margin: 5px 0;
   }
 }
+@media screen and (max-width: 750px) {
+  main #registration_container .registration-information-block {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  main #registration_container .registration-information-block h1 {
+    font-size: 22px;
+  }
+  main #registration_container .registration-information-block p {
+    width: auto;
+  }
+  main #registration_container .registration-form-block form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main #registration_container .registration-form-block form h2 {
+    align-self: center;
+    font-size: 22px;
+  }
+  main #registration_container .registration-form-block form label {
+    text-align: left;
+    font-size: 14px;
+  }
+  main #registration_container .registration-form-block form input {
+    width: 400px;
+  }
+}
 @media screen and (max-width: 550px) {
   main #registration_container .registration-information-block {
     width: 95%;
@@ -255,5 +348,33 @@ main #registration_container .registration-form-block #registration_form h2 {
   }
   main #registration_container .registration-information-block p {
     width: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  main #registration_container .registration-form-block form {
+    align-items: center;
+  }
+  main #registration_container .registration-form-block form input {
+    width: 280px;
+  }
+  main #registration_container .registration-form-block form button {
+    width: 280px;
+  }
+  main #registration_container .registration-form-block form .checkbox {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 340px) {
+  main #registration_container .registration-form-block form {
+    align-items: center;
+  }
+  main #registration_container .registration-form-block form input {
+    width: 240px;
+  }
+  main #registration_container .registration-form-block form button {
+    width: 240px;
+  }
+  main #registration_container .registration-form-block form .checkbox {
+    width: 270px;
   }
 }
