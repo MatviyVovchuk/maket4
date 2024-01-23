@@ -7,25 +7,23 @@ $(".menu-burger").on("click", function () {
 
 /* SLIDER (Site development) */
 
-$(document).ready(function(){
+$(document).ready(function () {
   var screenWidth = $(window).width();
-  var $siteDevContent = $('#site-development-container .site-dev-content');
-  var itemCount = $siteDevContent.find('.dev-content-item').length;
+  var $siteDevContent = $("#site-development-container .site-dev-content");
+  var itemCount = $siteDevContent.find(".dev-content-item").length;
 
   function initializeSlider() {
     let slidesToShow = 1;
-    
+
     if (screenWidth < 600) {
       slidesToShow = 1;
-      console.log (slidesToShow);
-    }
-    else if (screenWidth < 850) {
+      console.log(slidesToShow);
+    } else if (screenWidth < 850) {
       slidesToShow = 2;
-      console.log (slidesToShow);
-    }
-    else if (itemCount > 3) {
+      console.log(slidesToShow);
+    } else if (itemCount > 3) {
       slidesToShow = 3;
-      console.log (slidesToShow+' '+ itemCount);
+      console.log(slidesToShow + " " + itemCount);
     }
 
     $siteDevContent.slick({
@@ -39,7 +37,7 @@ $(document).ready(function(){
   }
 
   function destroySlider() {
-    $('#site-development-container .site-dev-content').slick('unslick');
+    $("#site-development-container .site-dev-content").slick("unslick");
   }
 
   // Initial setup
@@ -48,27 +46,35 @@ $(document).ready(function(){
   }
 
   // Update on window resize
-  $(window).resize(function() {
+  $(window).resize(function () {
     screenWidth = $(window).width();
 
     if (screenWidth < 850 || itemCount > 3) {
-      if ($('#site-development-container .site-dev-content').hasClass('slick-initialized')) {
+      if (
+        $("#site-development-container .site-dev-content").hasClass(
+          "slick-initialized"
+        )
+      ) {
         destroySlider();
       }
       initializeSlider();
     } else {
-      if ($('#site-development-container .site-dev-content').hasClass('slick-initialized')) {
+      if (
+        $("#site-development-container .site-dev-content").hasClass(
+          "slick-initialized"
+        )
+      ) {
         destroySlider();
       }
     }
   });
 });
 
-
 /* SLIDER (Site development) */
+/* SLIDER (Mentors) */
 
-$(document).ready(function(){
-  $('#student-feedback-container .feedback-content').slick({
+$(document).ready(function () {
+  $("#student-feedback-container .feedback-content").slick({
     slidesToShow: 1,
     arrows: false,
     dots: true,
@@ -81,5 +87,14 @@ $(document).ready(function(){
     fade: true,
     cssEase: "linear",
   });
-  
+
+  $("#mentors-slider-container .mentors-content").slick({
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    // adaptiveHeight: true,
+    slidesToScroll: 1,
+    infinite: true,
+    initialSlide: 0,
+  });
 });

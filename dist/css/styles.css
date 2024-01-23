@@ -413,6 +413,51 @@ main #video-container .video-block .video-block-video iframe {
   height: 400px;
   border: none;
 }
+main #mentors-slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+main #mentors-slider-container .mentors-slider-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  padding: 50px 15px;
+}
+main #mentors-slider-container .mentors-slider-block h1 {
+  font-weight: 400;
+}
+main #mentors-slider-container .mentors-slider-block .mentors-content {
+  width: 100%;
+}
+main #mentors-slider-container .mentors-slider-block .mentors-content .slick-dots li button:before {
+  font-size: 12px;
+  margin-top: 10px;
+}
+main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item {
+  display: flex;
+  margin: 20px;
+}
+main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item img {
+  height: 300px;
+  width: 300px;
+}
+main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text {
+  width: 650px;
+  padding-left: 60px;
+}
+main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text h2 {
+  margin: 30px 0 40px 0;
+  color: #3498db;
+  font-size: 20px;
+}
+main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text p {
+  width: 650px;
+  color: #7f7f7f;
+  font-weight: 200;
+}
 
 @media screen and (max-width: 1250px) {
   header {
@@ -462,6 +507,19 @@ main #video-container .video-block .video-block-video iframe {
   }
   main #video-container .video-block {
     width: 95%;
+  }
+  main #mentors-slider-container .mentors-slider-block {
+    width: 95%;
+  }
+  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item img {
+    width: 280px;
+    height: 280px;
+  }
+  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text {
+    width: 95%;
+  }
+  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text p {
+    width: auto;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -580,6 +638,23 @@ main #video-container .video-block .video-block-video iframe {
   main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
     width: 600px;
   }
+  main #mentors-slider-container .mentors-slider-block {
+    padding: 0;
+  }
+  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text p {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 750px) {
   header {
@@ -692,6 +767,10 @@ main #video-container .video-block .video-block-video iframe {
   main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
     width: 400px;
   }
+  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item img {
+    height: 200px;
+    width: 200px;
+  }
 }
 @media screen and (max-width: 450px) {
   main #registration_container .registration-form-block form {
@@ -745,6 +824,13 @@ main #video-container .video-block .video-block-video iframe {
   }
   main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-right {
     left: 43%;
+  }
+  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item img {
+    height: 150px;
+    width: 150px;
+  }
+  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text h2 {
+    margin: 15px 0 5px 0;
   }
 }
 @media screen and (max-width: 340px) {
