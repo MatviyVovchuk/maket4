@@ -37,6 +37,7 @@ header {
   height: 100px;
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 
   .header-content {
     display: flex;
@@ -418,7 +419,7 @@ main {
     justify-content: center;
     align-items: center;
     margin: 30px 0;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
 
     .video-block {
       display: flex;
@@ -519,6 +520,11 @@ main {
             text-align: center;
           }
         }
+      }
+    }
+    #video-container {
+      .video-block {
+        width: 95%;
       }
     }
   }
@@ -630,6 +636,13 @@ main {
               top: -80px;
             }
           }
+        }
+      }
+    }
+    #video-container {
+      .video-block {
+        .video-block-video {
+          width: 100%;
         }
       }
     }

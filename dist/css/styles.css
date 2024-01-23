@@ -36,6 +36,7 @@ header {
   height: 100px;
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 header .header-content {
   display: flex;
@@ -379,7 +380,7 @@ main #video-container {
   justify-content: center;
   align-items: center;
   margin: 30px 0;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 main #video-container .video-block {
   display: flex;
@@ -458,6 +459,9 @@ main #video-container .video-block .video-block-video iframe {
   }
   main #statistic-container .statistick-content-block .statistick-item p {
     text-align: center;
+  }
+  main #video-container .video-block {
+    width: 95%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -543,6 +547,9 @@ main #video-container .video-block .video-block-video iframe {
   }
   main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-right {
     top: -80px;
+  }
+  main #video-container .video-block .video-block-video {
+    width: 100%;
   }
 }
 @media screen and (max-width: 850px) {
