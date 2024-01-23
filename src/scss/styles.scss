@@ -374,12 +374,17 @@ main {
       .site-development-block {
         padding: 50px 0px;
 
+        h1 {
+          font-size: 26px;
+        }
+
         .site-dev-content {
           width: 950px;
 
           .dev-content-item {
             h2 {
-              font-size: 18px;
+              // font-size: 18px;
+              text-align: center;
               font-weight: 500;
             }
             hr {
@@ -479,7 +484,7 @@ main {
             margin: 20px 10px;
 
             h2 {
-              font-size: 16px;
+              font-size: 22px;
             }
             hr {
               width: 240px;
@@ -505,11 +510,19 @@ main {
   main {
     #site-development-container {
       .site-development-block {
+        h1 {
+          margin-bottom: 40px;
+        }
         .site-dev-content {
           width: 600px;
+
           .dev-content-item {
             height: auto;
             margin: 0 10px;
+          }
+          .slick-dots li button:before {
+            font-size: 12px;
+            margin-top: 10px;
           }
         }
       }
@@ -528,6 +541,21 @@ main {
 }
 
 @media screen and (max-width: 750px) {
+  header {
+    height: 90px;
+
+    .header-content {
+      .main-menu {
+        .logo-image {
+          width: 70px;
+          height: 70px;
+        }
+        .menu-burger {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
   main {
     #registration_container {
       .registration-information-block {
@@ -585,6 +613,22 @@ main {
 }
 
 @media screen and (max-width: 600px) {
+  header {
+    height: 70px;
+
+    .header-content {
+      .main-menu {
+        .logo-image {
+          width: 60px;
+          height: 60px;
+          margin: 5px 0;
+        }
+        .menu-burger {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
   main {
     #registration_container {
       .registration-information-block {
@@ -667,14 +711,16 @@ main {
 @media screen and (max-width: 340px) {
   main {
     #registration_container {
+      padding-bottom: 30px;
       .registration-form-block {
+        margin-bottom: 0;
         form {
           align-items: center;
 
-          input {
-            width: 240px;
+          h2 {
+            font-size: 21px;
           }
-          button {
+          input {
             width: 240px;
           }
           .checkbox {

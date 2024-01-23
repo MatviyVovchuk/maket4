@@ -332,11 +332,14 @@ main #statistic-container .statistick-content-block .statistick-item p {
   main #site-development-container .site-development-block {
     padding: 50px 0px;
   }
+  main #site-development-container .site-development-block h1 {
+    font-size: 26px;
+  }
   main #site-development-container .site-development-block .site-dev-content {
     width: 950px;
   }
   main #site-development-container .site-development-block .site-dev-content .dev-content-item h2 {
-    font-size: 18px;
+    text-align: center;
     font-weight: 500;
   }
   main #site-development-container .site-development-block .site-dev-content .dev-content-item hr {
@@ -414,7 +417,7 @@ main #statistic-container .statistick-content-block .statistick-item p {
     margin: 20px 10px;
   }
   main #site-development-container .site-development-block .site-dev-content .dev-content-item h2 {
-    font-size: 16px;
+    font-size: 22px;
   }
   main #site-development-container .site-development-block .site-dev-content .dev-content-item hr {
     width: 240px;
@@ -428,12 +431,19 @@ main #statistic-container .statistick-content-block .statistick-item p {
   }
 }
 @media screen and (max-width: 850px) {
+  main #site-development-container .site-development-block h1 {
+    margin-bottom: 40px;
+  }
   main #site-development-container .site-development-block .site-dev-content {
     width: 600px;
   }
   main #site-development-container .site-development-block .site-dev-content .dev-content-item {
     height: auto;
     margin: 0 10px;
+  }
+  main #site-development-container .site-development-block .site-dev-content .slick-dots li button:before {
+    font-size: 12px;
+    margin-top: 10px;
   }
   main #statistic-container .statistick-content-block {
     width: 750px;
@@ -445,6 +455,16 @@ main #statistic-container .statistick-content-block .statistick-item p {
   }
 }
 @media screen and (max-width: 750px) {
+  header {
+    height: 90px;
+  }
+  header .header-content .main-menu .logo-image {
+    width: 70px;
+    height: 70px;
+  }
+  header .header-content .main-menu .menu-burger {
+    margin-top: 30px;
+  }
   main #registration_container .registration-information-block {
     width: 80%;
     margin-bottom: 20px;
@@ -490,6 +510,17 @@ main #statistic-container .statistick-content-block .statistick-item p {
   }
 }
 @media screen and (max-width: 600px) {
+  header {
+    height: 70px;
+  }
+  header .header-content .main-menu .logo-image {
+    width: 60px;
+    height: 60px;
+    margin: 5px 0;
+  }
+  header .header-content .main-menu .menu-burger {
+    margin-top: 20px;
+  }
   main #registration_container .registration-information-block {
     width: 95%;
     margin-bottom: 20px;
@@ -544,13 +575,19 @@ main #statistic-container .statistick-content-block .statistick-item p {
   }
 }
 @media screen and (max-width: 340px) {
+  main #registration_container {
+    padding-bottom: 30px;
+  }
+  main #registration_container .registration-form-block {
+    margin-bottom: 0;
+  }
   main #registration_container .registration-form-block form {
     align-items: center;
   }
-  main #registration_container .registration-form-block form input {
-    width: 240px;
+  main #registration_container .registration-form-block form h2 {
+    font-size: 21px;
   }
-  main #registration_container .registration-form-block form button {
+  main #registration_container .registration-form-block form input {
     width: 240px;
   }
   main #registration_container .registration-form-block form .checkbox {
