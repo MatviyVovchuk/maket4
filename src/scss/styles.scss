@@ -382,7 +382,7 @@ main {
           flex-direction: column;
           align-items: center;
           color: #7f7f7f;
-          
+
           blockquote {
             quotes: none;
             text-align: center;
@@ -768,6 +768,10 @@ main {
           .dev-content-item {
             height: auto;
             margin-top: 10px;
+
+            hr {
+              width: 350px;
+            }
           }
         }
       }
@@ -816,6 +820,12 @@ main {
       .site-development-block {
         .site-dev-content {
           width: 320px;
+
+          .dev-content-item {
+            hr {
+              width: 250px;
+            }
+          }
         }
       }
     }

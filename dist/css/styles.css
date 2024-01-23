@@ -632,6 +632,9 @@ main #student-feedback-container .student-feedback-content .feedback-content .fe
     height: auto;
     margin-top: 10px;
   }
+  main #site-development-container .site-development-block .site-dev-content .dev-content-item hr {
+    width: 350px;
+  }
   main #student-feedback-container .student-feedback-content h1 {
     font-size: 22px;
   }
@@ -660,6 +663,9 @@ main #student-feedback-container .student-feedback-content .feedback-content .fe
   }
   main #site-development-container .site-development-block .site-dev-content {
     width: 320px;
+  }
+  main #site-development-container .site-development-block .site-dev-content .dev-content-item hr {
+    width: 250px;
   }
   main #statistic-container .statistick-content-block {
     width: 400px;

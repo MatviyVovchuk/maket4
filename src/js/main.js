@@ -13,12 +13,23 @@ $(document).ready(function(){
   var itemCount = $siteDevContent.find('.dev-content-item').length;
 
   function initializeSlider() {
-    // var $siteDevContent = $('#site-development-container .site-dev-content');
-    // var itemCount = $siteDevContent.find('.dev-content-item').length;
+    let slidesToShow = 1;
+    
+    if (screenWidth < 600) {
+      slidesToShow = 1;
+      console.log (slidesToShow);
+    }
+    else if (screenWidth < 850) {
+      slidesToShow = 2;
+      console.log (slidesToShow);
+    }
+    else if (itemCount > 3) {
+      slidesToShow = 3;
+      console.log (slidesToShow+' '+ itemCount);
+    }
 
-    // Adjust these settings based on your requirements
     $siteDevContent.slick({
-      slidesToShow: itemCount > 3 ? 3 : (screenWidth < 600 ? 1 : 2),
+      slidesToShow: slidesToShow,
       arrows: false,
       dots: true,
       slidesToScroll: 1,
