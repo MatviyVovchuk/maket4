@@ -51,3 +51,22 @@ $(document).ready(function(){
     }
   });
 });
+
+/* SLIDER (Site development) */
+
+$(document).ready(function(){
+  $('#student-feedback-container .feedback-content').slick({
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    // adaptiveHeight: true,
+    slidesToScroll: 1,
+    infinite: true,
+    initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 10000,
+    fade: true,
+    cssEase: "linear",
+  });
+  
+});

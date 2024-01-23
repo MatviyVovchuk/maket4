@@ -46,8 +46,9 @@ header .header-content {
 }
 header .header-content .main-menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 header .header-content .main-menu .logo-image {
   height: 80px;
@@ -58,7 +59,6 @@ header .header-content .main-menu .menu-ul {
   display: flex;
   list-style-type: none;
   font-size: 16px;
-  margin-left: 300px;
 }
 header .header-content .main-menu a {
   text-decoration: none;
@@ -213,7 +213,6 @@ main #registration_container .registration-form-block form .checkbox a:hover {
 }
 main #registration_container .registration-form-block form b {
   font-weight: bold;
-  quotes: none;
   cursor: pointer;
   color: red;
 }
@@ -308,6 +307,68 @@ main #statistic-container .statistick-content-block .statistick-item h1 {
 }
 main #statistic-container .statistick-content-block .statistick-item p {
   font-weight: 200;
+}
+main #student-feedback-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #student-feedback-container .student-feedback-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+main #student-feedback-container .student-feedback-content h1 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+main #student-feedback-container .student-feedback-content .feedback-content {
+  width: 900px;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+main #student-feedback-container .student-feedback-content .feedback-content .slick-dots li button:before {
+  font-size: 12px;
+  margin-top: 10px;
+}
+main #student-feedback-container .student-feedback-content .feedback-content .slick-dots {
+  width: 870px;
+}
+main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #7f7f7f;
+}
+main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
+  quotes: none;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 800px;
+}
+main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item i {
+  font-size: 28px;
+  color: #c4c4c4;
+}
+main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-left {
+  position: relative;
+  left: -47%;
+  top: 5px;
+}
+main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-right {
+  position: relative;
+  left: 47%;
+  top: -90px;
+}
+main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item cite {
+  margin-bottom: 10px;
+}
+main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item p {
+  color: #333333;
 }
 
 @media screen and (max-width: 1250px) {
@@ -429,6 +490,18 @@ main #statistic-container .statistick-content-block .statistick-item p {
     width: 200px;
     margin: 40px 20px;
   }
+  main #student-feedback-container .student-feedback-content .feedback-content {
+    width: 800px;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content .slick-dots {
+    width: 770px;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
+    width: 700px;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-right {
+    top: -80px;
+  }
 }
 @media screen and (max-width: 850px) {
   main #site-development-container .site-development-block h1 {
@@ -453,6 +526,15 @@ main #statistic-container .statistick-content-block .statistick-item p {
     margin: 30px 10px;
     width: 187.5px;
   }
+  main #student-feedback-container .student-feedback-content .feedback-content {
+    width: 700px;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content .slick-dots {
+    width: 670px;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
+    width: 600px;
+  }
 }
 @media screen and (max-width: 750px) {
   header {
@@ -470,7 +552,7 @@ main #statistic-container .statistick-content-block .statistick-item p {
     margin-bottom: 20px;
   }
   main #registration_container .registration-information-block h1 {
-    font-size: 22px;
+    font-size: 26px;
   }
   main #registration_container .registration-information-block p {
     width: auto;
@@ -508,6 +590,15 @@ main #statistic-container .statistick-content-block .statistick-item p {
   main #statistic-container .statistick-content-block .statistick-item p {
     margin-bottom: 10px;
   }
+  main #student-feedback-container .student-feedback-content .feedback-content {
+    width: 600px;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content .slick-dots {
+    width: 570px;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 600px) {
   header {
@@ -541,6 +632,18 @@ main #statistic-container .statistick-content-block .statistick-item p {
     height: auto;
     margin-top: 10px;
   }
+  main #student-feedback-container .student-feedback-content h1 {
+    font-size: 22px;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content {
+    width: 450px;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content .slick-dots {
+    width: 430px;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
+    width: 400px;
+  }
 }
 @media screen and (max-width: 450px) {
   main #registration_container .registration-form-block form {
@@ -573,6 +676,25 @@ main #statistic-container .statistick-content-block .statistick-item p {
   main #statistic-container .statistick-content-block .statistick-item p {
     margin-bottom: 10px;
   }
+  main #student-feedback-container .student-feedback-content h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content {
+    width: 320px;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content .slick-dots {
+    width: 300px;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
+    width: 250px;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-left {
+    left: -43%;
+  }
+  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-right {
+    left: 43%;
+  }
 }
 @media screen and (max-width: 340px) {
   main #registration_container {
@@ -598,7 +720,7 @@ main #statistic-container .statistick-content-block .statistick-item p {
     margin: 20px 0;
   }
   main #statistic-container .statistick-content-block .statistick-item {
-    width: 130px;
+    width: 150px;
     margin: 0;
   }
   main #statistic-container .statistick-content-block .statistick-item h1 {

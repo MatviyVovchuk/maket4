@@ -47,8 +47,9 @@ header {
 
     .main-menu {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      width: 100%;
 
       .logo-image {
         height: 80px;
@@ -59,7 +60,7 @@ header {
         display: flex;
         list-style-type: none;
         font-size: 16px;
-        margin-left: 300px;
+        // margin-left: 300px;
       }
       a {
         text-decoration: none;
@@ -231,7 +232,7 @@ main {
         }
         b {
           font-weight: bold;
-          quotes: none;
+          // quotes: none;
           cursor: pointer;
           color: red;
         }
@@ -338,6 +339,71 @@ main {
 
         p {
           font-weight: 200;
+        }
+      }
+    }
+  }
+  #student-feedback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .student-feedback-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+
+      h1 {
+        font-size: 26px;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: #333333;
+      }
+      .feedback-content {
+        width: 900px;
+        padding: 0 15px;
+        margin-bottom: 30px;
+        .slick-dots li button:before {
+          font-size: 12px;
+          margin-top: 10px;
+        }
+        .slick-dots {
+          width: 870px;
+        }
+        .feedback-content-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: #7f7f7f;
+          
+          blockquote {
+            quotes: none;
+            text-align: center;
+            margin-bottom: 20px;
+            width: 800px;
+          }
+          i {
+            font-size: 28px;
+            color: #c4c4c4;
+          }
+          .fa-quote-left {
+            position: relative;
+            left: -47%;
+            top: 5px;
+          }
+          .fa-quote-right {
+            position: relative;
+            left: 47%;
+            top: -90px;
+          }
+          cite {
+            margin-bottom: 10px;
+          }
+          p {
+            color: #333333;
+          }
         }
       }
     }
@@ -503,6 +569,24 @@ main {
         }
       }
     }
+    #student-feedback-container {
+      .student-feedback-content {
+        .feedback-content {
+          width: 800px;
+          .slick-dots {
+            width: 770px;
+          }
+          .feedback-content-item {
+            blockquote {
+              width: 700px;
+            }
+            .fa-quote-right {
+              top: -80px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -537,6 +621,21 @@ main {
         }
       }
     }
+    #student-feedback-container {
+      .student-feedback-content {
+        .feedback-content {
+          width: 700px;
+          .slick-dots {
+            width: 670px;
+          }
+          .feedback-content-item {
+            blockquote {
+              width: 600px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -563,7 +662,7 @@ main {
         margin-bottom: 20px;
 
         h1 {
-          font-size: 22px;
+          font-size: 26px;
         }
         p {
           width: auto;
@@ -605,6 +704,21 @@ main {
           }
           p {
             margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    #student-feedback-container {
+      .student-feedback-content {
+        .feedback-content {
+          width: 600px;
+          .slick-dots {
+            width: 570px;
+          }
+          .feedback-content-item {
+            blockquote {
+              width: 500px;
+            }
           }
         }
       }
@@ -658,6 +772,24 @@ main {
         }
       }
     }
+    #student-feedback-container {
+      .student-feedback-content {
+        h1 {
+          font-size: 22px;
+        }
+        .feedback-content {
+          width: 450px;
+          .slick-dots {
+            width: 430px;
+          }
+          .feedback-content-item {
+            blockquote {
+              width: 400px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -705,6 +837,32 @@ main {
         }
       }
     }
+    #student-feedback-container {
+      .student-feedback-content {
+        h1 {
+          font-size: 22px;
+          text-align: center;
+        }
+        .feedback-content {
+          width: 320px;
+          .slick-dots {
+            width: 300px;
+          }
+          .feedback-content-item {
+            blockquote {
+              width: 250px;
+              // font-size: 14px;
+            }
+            .fa-quote-left {
+              left: -43%;
+            }
+            .fa-quote-right {
+              left: 43%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -734,7 +892,7 @@ main {
         width: 320px;
         margin: 20px 0;
         .statistick-item {
-          width: 130px;
+          width: 150px;
           margin: 0;
 
           h1 {
