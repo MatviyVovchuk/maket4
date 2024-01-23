@@ -283,6 +283,11 @@ main {
         max-width: 1200px; // Adjust max-width as needed
         // overflow: auto; // Add overflow property for responsiveness
 
+        .slick-dots li button:before {
+          font-size: 12px;
+          margin-top: 10px;
+        }
+
         .dev-content-item {
           display: flex;
           flex-direction: column;
@@ -449,7 +454,6 @@ main {
 
           .dev-content-item {
             h2 {
-              // font-size: 18px;
               text-align: center;
               font-weight: 500;
             }
@@ -603,10 +607,6 @@ main {
           .dev-content-item {
             height: auto;
             margin: 0 10px;
-          }
-          .slick-dots li button:before {
-            font-size: 12px;
-            margin-top: 10px;
           }
         }
       }

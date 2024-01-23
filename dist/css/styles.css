@@ -258,6 +258,10 @@ main #site-development-container .site-development-block .site-dev-content {
   width: 100%;
   max-width: 1200px;
 }
+main #site-development-container .site-development-block .site-dev-content .slick-dots li button:before {
+  font-size: 12px;
+  margin-top: 10px;
+}
 main #site-development-container .site-development-block .site-dev-content .dev-content-item {
   display: flex;
   flex-direction: column;
@@ -513,10 +517,6 @@ main #student-feedback-container .student-feedback-content .feedback-content .fe
   main #site-development-container .site-development-block .site-dev-content .dev-content-item {
     height: auto;
     margin: 0 10px;
-  }
-  main #site-development-container .site-development-block .site-dev-content .slick-dots li button:before {
-    font-size: 12px;
-    margin-top: 10px;
   }
   main #statistic-container .statistick-content-block {
     width: 750px;

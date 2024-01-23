@@ -9,20 +9,21 @@ $(".menu-burger").on("click", function () {
 
 $(document).ready(function(){
   var screenWidth = $(window).width();
+  var $siteDevContent = $('#site-development-container .site-dev-content');
+  var itemCount = $siteDevContent.find('.dev-content-item').length;
 
   function initializeSlider() {
+    // var $siteDevContent = $('#site-development-container .site-dev-content');
+    // var itemCount = $siteDevContent.find('.dev-content-item').length;
+
     // Adjust these settings based on your requirements
-    $('#site-development-container .site-dev-content').slick({
-      slidesToShow: screenWidth < 600 ? 1 : 2,
+    $siteDevContent.slick({
+      slidesToShow: itemCount > 3 ? 3 : (screenWidth < 600 ? 1 : 2),
       arrows: false,
       dots: true,
-      // adaptiveHeight: true,
       slidesToScroll: 1,
       infinite: true,
       initialSlide: 0,
-      // autoplay: true,
-      // autoplaySpeed: 2000,
-      // Add other Slick settings as needed
     });
   }
 
@@ -31,7 +32,7 @@ $(document).ready(function(){
   }
 
   // Initial setup
-  if (screenWidth < 850) {
+  if (screenWidth < 850 || itemCount > 3) {
     initializeSlider();
   }
 
@@ -39,7 +40,7 @@ $(document).ready(function(){
   $(window).resize(function() {
     screenWidth = $(window).width();
 
-    if (screenWidth < 850) {
+    if (screenWidth < 850 || itemCount > 3) {
       if ($('#site-development-container .site-dev-content').hasClass('slick-initialized')) {
         destroySlider();
       }
@@ -51,6 +52,7 @@ $(document).ready(function(){
     }
   });
 });
+
 
 /* SLIDER (Site development) */
 
