@@ -203,6 +203,11 @@ main {
           border-radius: 5px;
           border: 1px solid #bababa;
         }
+        input.error {
+          border-radius: 2px;
+          border: 1px solid red;
+          box-shadow: inset 0 0 5px red;
+        }
         input:focus {
           outline: none;
           border: 1px solid #337ab7;
@@ -259,7 +264,7 @@ main {
       }
     }
   }
-  #site-development-container {
+  #site_development_container {
     background-color: #ffffff;
     display: flex;
     justify-content: center;
@@ -319,7 +324,7 @@ main {
       }
     }
   }
-  #statistic-container {
+  #statistic_container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -349,7 +354,7 @@ main {
       }
     }
   }
-  #student-feedback-container {
+  #student_feedback_container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -414,7 +419,7 @@ main {
       }
     }
   }
-  #video-container {
+  #video_container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -456,7 +461,7 @@ main {
       }
     }
   }
-  #mentors-slider-container {
+  #mentors_slider_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -507,7 +512,7 @@ main {
       }
     }
   }
-  #map-location-container {
+  #map_location_container {
     .map-location-block {
       iframe {
         height: 400px;
@@ -516,7 +521,7 @@ main {
       }
     }
   }
-  #contact-find-us-container {
+  #contact_find_us_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -600,7 +605,7 @@ footer {
         margin: 40px 0;
       }
     }
-    #site-development-container {
+    #site_development_container {
       .site-development-block {
         padding: 50px 0px;
 
@@ -625,7 +630,7 @@ footer {
         }
       }
     }
-    #statistic-container {
+    #statistic_container {
       .statistick-content-block {
         width: 1000px;
 
@@ -638,12 +643,12 @@ footer {
         }
       }
     }
-    #video-container {
+    #video_container {
       .video-block {
         width: 95%;
       }
     }
-    #mentors-slider-container {
+    #mentors_slider_container {
       .mentors-slider-block {
         width: 95%;
 
@@ -663,7 +668,7 @@ footer {
         }
       }
     }
-    #contact-find-us-container {
+    #contact_find_us_container {
       .contact-find-us-block {
         width: 95%;
       }
@@ -734,7 +739,7 @@ footer {
     }
   }
   main {
-    #site-development-container {
+    #site_development_container {
       .site-development-block {
         .site-dev-content {
           width: 800px;
@@ -752,7 +757,7 @@ footer {
         }
       }
     }
-    #statistic-container {
+    #statistic_container {
       .statistick-content-block {
         width: 800px;
 
@@ -762,7 +767,7 @@ footer {
         }
       }
     }
-    #student-feedback-container {
+    #student_feedback_container {
       .student-feedback-content {
         .feedback-content {
           width: 800px;
@@ -780,7 +785,7 @@ footer {
         }
       }
     }
-    #video-container {
+    #video_container {
       .video-block {
         .video-block-video {
           width: 100%;
@@ -792,7 +797,7 @@ footer {
 
 @media screen and (max-width: 850px) {
   main {
-    #site-development-container {
+    #site_development_container {
       .site-development-block {
         h1 {
           margin-bottom: 40px;
@@ -807,7 +812,7 @@ footer {
         }
       }
     }
-    #statistic-container {
+    #statistic_container {
       .statistick-content-block {
         width: 750px;
         padding: 0;
@@ -817,7 +822,7 @@ footer {
         }
       }
     }
-    #student-feedback-container {
+    #student_feedback_container {
       .student-feedback-content {
         .feedback-content {
           width: 700px;
@@ -832,7 +837,7 @@ footer {
         }
       }
     }
-    #mentors-slider-container {
+    #mentors_slider_container {
       .mentors-slider-block {
         padding: 0;
         .mentors-content {
@@ -905,7 +910,7 @@ footer {
         }
       }
     }
-    #statistic-container {
+    #statistic_container {
       .statistick-content-block {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -925,7 +930,7 @@ footer {
         }
       }
     }
-    #student-feedback-container {
+    #student_feedback_container {
       .student-feedback-content {
         .feedback-content {
           width: 600px;
@@ -940,7 +945,7 @@ footer {
         }
       }
     }
-    #contact-find-us-container {
+    #contact_find_us_container {
       .contact-find-us-block {
         flex-wrap: wrap;
         width: 500px;
@@ -987,7 +992,7 @@ footer {
         }
       }
     }
-    #site-development-container {
+    #site_development_container {
       .site-development-block {
         h1 {
           font-size: 22px;
@@ -1006,7 +1011,7 @@ footer {
         }
       }
     }
-    #statistic-container {
+    #statistic_container {
       .statistick-content-block {
         .statistick-item {
           h1 {
@@ -1015,7 +1020,7 @@ footer {
         }
       }
     }
-    #student-feedback-container {
+    #student_feedback_container {
       .student-feedback-content {
         h1 {
           font-size: 22px;
@@ -1033,7 +1038,7 @@ footer {
         }
       }
     }
-    #mentors-slider-container {
+    #mentors_slider_container {
       .mentors-slider-block {
         .mentors-content {
           .mentors-content-item {
@@ -1045,7 +1050,7 @@ footer {
         }
       }
     }
-    #contact-find-us-container {
+    #contact_find_us_container {
       .contact-find-us-block {
         width: 400px;
         padding: 50px 0;
@@ -1092,7 +1097,7 @@ footer {
         }
       }
     }
-    #site-development-container {
+    #site_development_container {
       .site-development-block {
         .site-dev-content {
           width: 320px;
@@ -1105,7 +1110,7 @@ footer {
         }
       }
     }
-    #statistic-container {
+    #statistic_container {
       .statistick-content-block {
         width: 400px;
         margin: 30px 0;
@@ -1123,7 +1128,7 @@ footer {
         }
       }
     }
-    #student-feedback-container {
+    #student_feedback_container {
       .student-feedback-content {
         h1 {
           font-size: 22px;
@@ -1149,7 +1154,7 @@ footer {
         }
       }
     }
-    #mentors-slider-container {
+    #mentors_slider_container {
       .mentors-slider-block {
         .mentors-content {
           .mentors-content-item {
@@ -1166,7 +1171,7 @@ footer {
         }
       }
     }
-    #contact-find-us-container {
+    #contact_find_us_container {
       .contact-find-us-block {
         width: 320px;
         padding: 50px 0;
@@ -1222,7 +1227,7 @@ footer {
         }
       }
     }
-    #statistic-container {
+    #statistic_container {
       .statistick-content-block {
         width: 320px;
         margin: 20px 0;
@@ -1238,5 +1243,4 @@ footer {
       }
     }
   }
-  
 }

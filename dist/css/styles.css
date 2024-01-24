@@ -184,6 +184,11 @@ main #registration_container .registration-form-block form input {
   border-radius: 5px;
   border: 1px solid #bababa;
 }
+main #registration_container .registration-form-block form input.error {
+  border-radius: 2px;
+  border: 1px solid red;
+  box-shadow: inset 0 0 5px red;
+}
 main #registration_container .registration-form-block form input:focus {
   outline: none;
   border: 1px solid #337ab7;
@@ -236,34 +241,34 @@ main #registration_container .registration-form-block form button:hover {
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-main #site-development-container {
+main #site_development_container {
   background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main #site-development-container .site-development-block {
+main #site_development_container .site-development-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 1200px;
   padding: 50px 15px;
 }
-main #site-development-container .site-development-block h1 {
+main #site_development_container .site-development-block h1 {
   font-weight: 400;
 }
-main #site-development-container .site-development-block .site-dev-content {
+main #site_development_container .site-development-block .site-dev-content {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 1200px;
 }
-main #site-development-container .site-development-block .site-dev-content .slick-dots li button:before {
+main #site_development_container .site-development-block .site-dev-content .slick-dots li button:before {
   font-size: 12px;
   margin-top: 10px;
 }
-main #site-development-container .site-development-block .site-dev-content .dev-content-item {
+main #site_development_container .site-development-block .site-dev-content .dev-content-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -272,117 +277,117 @@ main #site-development-container .site-development-block .site-dev-content .dev-
   margin: 20px;
   height: 350px;
 }
-main #site-development-container .site-development-block .site-dev-content .dev-content-item h2 {
+main #site_development_container .site-development-block .site-dev-content .dev-content-item h2 {
   font-weight: 400;
   color: #7f7f7f;
 }
-main #site-development-container .site-development-block .site-dev-content .dev-content-item hr {
+main #site_development_container .site-development-block .site-dev-content .dev-content-item hr {
   width: 100%;
   border: 1px solid #3498db;
   margin-top: 25px;
   margin-bottom: 35px;
 }
-main #site-development-container .site-development-block .site-dev-content .dev-content-item p {
+main #site_development_container .site-development-block .site-dev-content .dev-content-item p {
   text-align: center;
   font-weight: 200;
   color: #7f7f7f;
 }
-main #statistic-container {
+main #statistic_container {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #3498db;
 }
-main #statistic-container .statistick-content-block {
+main #statistic_container .statistick-content-block {
   display: flex;
   justify-content: space-between;
   width: 1200px;
   padding: 50px 15px;
 }
-main #statistic-container .statistick-content-block .statistick-item {
+main #statistic_container .statistick-content-block .statistick-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 30px 50px;
   color: #ffffff;
 }
-main #statistic-container .statistick-content-block .statistick-item h1 {
+main #statistic_container .statistick-content-block .statistick-item h1 {
   margin: 20px;
   font-weight: 400;
 }
-main #statistic-container .statistick-content-block .statistick-item p {
+main #statistic_container .statistick-content-block .statistick-item p {
   font-weight: 200;
 }
-main #student-feedback-container {
+main #student_feedback_container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main #student-feedback-container .student-feedback-content {
+main #student_feedback_container .student-feedback-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
 }
-main #student-feedback-container .student-feedback-content h1 {
+main #student_feedback_container .student-feedback-content h1 {
   font-size: 26px;
   font-weight: 400;
   margin-top: 30px;
   margin-bottom: 10px;
   color: #333333;
 }
-main #student-feedback-container .student-feedback-content .feedback-content {
+main #student_feedback_container .student-feedback-content .feedback-content {
   width: 900px;
   padding: 0 15px;
   margin-bottom: 30px;
 }
-main #student-feedback-container .student-feedback-content .feedback-content .slick-dots li button:before {
+main #student_feedback_container .student-feedback-content .feedback-content .slick-dots li button:before {
   font-size: 12px;
   margin-top: 10px;
 }
-main #student-feedback-container .student-feedback-content .feedback-content .slick-dots {
+main #student_feedback_container .student-feedback-content .feedback-content .slick-dots {
   width: 870px;
 }
-main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item {
+main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #7f7f7f;
 }
-main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
+main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item blockquote {
   quotes: none;
   text-align: center;
   margin-bottom: 20px;
   width: 800px;
 }
-main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item i {
+main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item i {
   font-size: 28px;
   color: #c4c4c4;
 }
-main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-left {
+main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-left {
   position: relative;
   left: -47%;
   top: 5px;
 }
-main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-right {
+main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-right {
   position: relative;
   left: 47%;
   top: -90px;
 }
-main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item cite {
+main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item cite {
   margin-bottom: 10px;
 }
-main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item p {
+main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item p {
   color: #333333;
 }
-main #video-container {
+main #video_container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px 0;
   background-color: #f7f7f7;
 }
-main #video-container .video-block {
+main #video_container .video-block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -390,105 +395,105 @@ main #video-container .video-block {
   width: 1200px;
   padding: 50px 15px;
 }
-main #video-container .video-block .video-block-text {
+main #video_container .video-block .video-block-text {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main #video-container .video-block .video-block-text h1 {
+main #video_container .video-block .video-block-text h1 {
   padding-bottom: 20px;
   font-weight: 400;
 }
-main #video-container .video-block .video-block-text p {
+main #video_container .video-block .video-block-text p {
   width: 95%;
   text-align: center;
   padding-bottom: 20px;
   color: #7f7f7f;
 }
-main #video-container .video-block .video-block-video {
+main #video_container .video-block .video-block-video {
   width: 1020px;
 }
-main #video-container .video-block .video-block-video iframe {
+main #video_container .video-block .video-block-video iframe {
   width: 100%;
   height: 400px;
   border: none;
 }
-main #mentors-slider-container {
+main #mentors_slider_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
 }
-main #mentors-slider-container .mentors-slider-block {
+main #mentors_slider_container .mentors-slider-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 1200px;
   padding: 50px 15px;
 }
-main #mentors-slider-container .mentors-slider-block h1 {
+main #mentors_slider_container .mentors-slider-block h1 {
   font-weight: 400;
 }
-main #mentors-slider-container .mentors-slider-block .mentors-content {
+main #mentors_slider_container .mentors-slider-block .mentors-content {
   width: 100%;
 }
-main #mentors-slider-container .mentors-slider-block .mentors-content .slick-dots li button:before {
+main #mentors_slider_container .mentors-slider-block .mentors-content .slick-dots li button:before {
   font-size: 12px;
   margin-top: 10px;
 }
-main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item {
+main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item {
   display: flex;
   margin: 20px;
 }
-main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item img {
+main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item img {
   height: 300px;
   width: 300px;
 }
-main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text {
+main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text {
   width: 650px;
   padding-left: 60px;
 }
-main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text h2 {
+main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text h2 {
   margin: 30px 0 40px 0;
   color: #3498db;
   font-size: 20px;
 }
-main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text p {
+main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text p {
   width: 650px;
   color: #7f7f7f;
   font-weight: 200;
 }
-main #map-location-container .map-location-block iframe {
+main #map_location_container .map-location-block iframe {
   height: 400px;
   width: 100%;
   margin-bottom: -5px;
 }
-main #contact-find-us-container {
+main #contact_find_us_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #3498db;
 }
-main #contact-find-us-container .contact-find-us-block {
+main #contact_find_us_container .contact-find-us-block {
   display: flex;
   justify-content: space-around;
   width: 1200px;
   padding: 50px 15px;
 }
-main #contact-find-us-container .contact-find-us-block .contact-find-us-item {
+main #contact_find_us_container .contact-find-us-block .contact-find-us-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #ffffff;
 }
-main #contact-find-us-container .contact-find-us-block .contact-find-us-item i {
+main #contact_find_us_container .contact-find-us-block .contact-find-us-item i {
   font-size: 50px;
 }
-main #contact-find-us-container .contact-find-us-block .contact-find-us-item h2 {
+main #contact_find_us_container .contact-find-us-block .contact-find-us-item h2 {
   margin: 20px 0 0;
   font-size: 18px;
 }
-main #contact-find-us-container .contact-find-us-block .contact-find-us-item a {
+main #contact_find_us_container .contact-find-us-block .contact-find-us-item a {
   margin-top: 10px;
   text-decoration: none;
   color: #ffffff;
@@ -533,50 +538,50 @@ footer .footer-block p:first-child {
   main #registration_container .registration-form-block {
     margin: 40px 0;
   }
-  main #site-development-container .site-development-block {
+  main #site_development_container .site-development-block {
     padding: 50px 0px;
   }
-  main #site-development-container .site-development-block h1 {
+  main #site_development_container .site-development-block h1 {
     font-size: 26px;
   }
-  main #site-development-container .site-development-block .site-dev-content {
+  main #site_development_container .site-development-block .site-dev-content {
     width: 950px;
   }
-  main #site-development-container .site-development-block .site-dev-content .dev-content-item h2 {
+  main #site_development_container .site-development-block .site-dev-content .dev-content-item h2 {
     text-align: center;
     font-weight: 500;
   }
-  main #site-development-container .site-development-block .site-dev-content .dev-content-item hr {
+  main #site_development_container .site-development-block .site-dev-content .dev-content-item hr {
     margin-top: 15px;
     margin-bottom: 25px;
     width: 260px;
   }
-  main #statistic-container .statistick-content-block {
+  main #statistic_container .statistick-content-block {
     width: 1000px;
   }
-  main #statistic-container .statistick-content-block .statistick-item {
+  main #statistic_container .statistick-content-block .statistick-item {
     width: 250px;
   }
-  main #statistic-container .statistick-content-block .statistick-item p {
+  main #statistic_container .statistick-content-block .statistick-item p {
     text-align: center;
   }
-  main #video-container .video-block {
+  main #video_container .video-block {
     width: 95%;
   }
-  main #mentors-slider-container .mentors-slider-block {
+  main #mentors_slider_container .mentors-slider-block {
     width: 95%;
   }
-  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item img {
+  main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item img {
     width: 280px;
     height: 280px;
   }
-  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text {
+  main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text {
     width: 95%;
   }
-  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text p {
+  main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text p {
     width: auto;
   }
-  main #contact-find-us-container .contact-find-us-block {
+  main #contact_find_us_container .contact-find-us-block {
     width: 95%;
   }
 }
@@ -633,84 +638,84 @@ footer .footer-block p:first-child {
   header .header-content .main-menu .menu-nav .menu-ul li {
     margin: 5px 0;
   }
-  main #site-development-container .site-development-block .site-dev-content {
+  main #site_development_container .site-development-block .site-dev-content {
     width: 800px;
   }
-  main #site-development-container .site-development-block .site-dev-content .dev-content-item {
+  main #site_development_container .site-development-block .site-dev-content .dev-content-item {
     margin: 20px 10px;
   }
-  main #site-development-container .site-development-block .site-dev-content .dev-content-item h2 {
+  main #site_development_container .site-development-block .site-dev-content .dev-content-item h2 {
     font-size: 22px;
   }
-  main #site-development-container .site-development-block .site-dev-content .dev-content-item hr {
+  main #site_development_container .site-development-block .site-dev-content .dev-content-item hr {
     width: 240px;
   }
-  main #statistic-container .statistick-content-block {
+  main #statistic_container .statistick-content-block {
     width: 800px;
   }
-  main #statistic-container .statistick-content-block .statistick-item {
+  main #statistic_container .statistick-content-block .statistick-item {
     width: 200px;
     margin: 40px 20px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content {
+  main #student_feedback_container .student-feedback-content .feedback-content {
     width: 800px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content .slick-dots {
+  main #student_feedback_container .student-feedback-content .feedback-content .slick-dots {
     width: 770px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
+  main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item blockquote {
     width: 700px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-right {
+  main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-right {
     top: -80px;
   }
-  main #video-container .video-block .video-block-video {
+  main #video_container .video-block .video-block-video {
     width: 100%;
   }
 }
 @media screen and (max-width: 850px) {
-  main #site-development-container .site-development-block h1 {
+  main #site_development_container .site-development-block h1 {
     margin-bottom: 40px;
   }
-  main #site-development-container .site-development-block .site-dev-content {
+  main #site_development_container .site-development-block .site-dev-content {
     width: 600px;
   }
-  main #site-development-container .site-development-block .site-dev-content .dev-content-item {
+  main #site_development_container .site-development-block .site-dev-content .dev-content-item {
     height: auto;
     margin: 0 10px;
   }
-  main #statistic-container .statistick-content-block {
+  main #statistic_container .statistick-content-block {
     width: 750px;
     padding: 0;
   }
-  main #statistic-container .statistick-content-block .statistick-item {
+  main #statistic_container .statistick-content-block .statistick-item {
     margin: 30px 10px;
     width: 187.5px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content {
+  main #student_feedback_container .student-feedback-content .feedback-content {
     width: 700px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content .slick-dots {
+  main #student_feedback_container .student-feedback-content .feedback-content .slick-dots {
     width: 670px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
+  main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item blockquote {
     width: 600px;
   }
-  main #mentors-slider-container .mentors-slider-block {
+  main #mentors_slider_container .mentors-slider-block {
     padding: 0;
   }
-  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item {
+  main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text {
+  main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
   }
-  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text p {
+  main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text p {
     text-align: center;
   }
 }
@@ -751,40 +756,40 @@ footer .footer-block p:first-child {
   main #registration_container .registration-form-block form input {
     width: 400px;
   }
-  main #statistic-container .statistick-content-block {
+  main #statistic_container .statistick-content-block {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 500px;
     margin: 30px 0;
   }
-  main #statistic-container .statistick-content-block .statistick-item {
+  main #statistic_container .statistick-content-block .statistick-item {
     width: 180px;
     margin: 10px;
   }
-  main #statistic-container .statistick-content-block .statistick-item h1 {
+  main #statistic_container .statistick-content-block .statistick-item h1 {
     font-size: 26px;
     margin: 5px;
   }
-  main #statistic-container .statistick-content-block .statistick-item p {
+  main #statistic_container .statistick-content-block .statistick-item p {
     margin-bottom: 10px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content {
+  main #student_feedback_container .student-feedback-content .feedback-content {
     width: 600px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content .slick-dots {
+  main #student_feedback_container .student-feedback-content .feedback-content .slick-dots {
     width: 570px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
+  main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item blockquote {
     width: 500px;
   }
-  main #contact-find-us-container .contact-find-us-block {
+  main #contact_find_us_container .contact-find-us-block {
     flex-wrap: wrap;
     width: 500px;
   }
-  main #contact-find-us-container .contact-find-us-block .contact-find-us-item {
+  main #contact_find_us_container .contact-find-us-block .contact-find-us-item {
     width: 250px;
   }
-  main #contact-find-us-container .contact-find-us-block .contact-find-us-item:nth-child(-n+2) {
+  main #contact_find_us_container .contact-find-us-block .contact-find-us-item:nth-child(-n+2) {
     margin-bottom: 15px;
   }
 }
@@ -810,52 +815,52 @@ footer .footer-block p:first-child {
   main #registration_container .registration-information-block p {
     width: auto;
   }
-  main #site-development-container .site-development-block h1 {
+  main #site_development_container .site-development-block h1 {
     font-size: 22px;
   }
-  main #site-development-container .site-development-block .site-dev-content {
+  main #site_development_container .site-development-block .site-dev-content {
     width: 400px;
   }
-  main #site-development-container .site-development-block .site-dev-content .dev-content-item {
+  main #site_development_container .site-development-block .site-dev-content .dev-content-item {
     height: auto;
     margin-top: 10px;
   }
-  main #site-development-container .site-development-block .site-dev-content .dev-content-item hr {
+  main #site_development_container .site-development-block .site-dev-content .dev-content-item hr {
     width: 350px;
   }
-  main #statistic-container .statistick-content-block .statistick-item h1 {
+  main #statistic_container .statistick-content-block .statistick-item h1 {
     font-size: 22px;
   }
-  main #student-feedback-container .student-feedback-content h1 {
+  main #student_feedback_container .student-feedback-content h1 {
     font-size: 22px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content {
+  main #student_feedback_container .student-feedback-content .feedback-content {
     width: 450px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content .slick-dots {
+  main #student_feedback_container .student-feedback-content .feedback-content .slick-dots {
     width: 430px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
+  main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item blockquote {
     width: 400px;
   }
-  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item img {
+  main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item img {
     height: 200px;
     width: 200px;
   }
-  main #contact-find-us-container .contact-find-us-block {
+  main #contact_find_us_container .contact-find-us-block {
     width: 400px;
     padding: 50px 0;
   }
-  main #contact-find-us-container .contact-find-us-block .contact-find-us-item {
+  main #contact_find_us_container .contact-find-us-block .contact-find-us-item {
     width: 200px;
   }
-  main #contact-find-us-container .contact-find-us-block .contact-find-us-item i {
+  main #contact_find_us_container .contact-find-us-block .contact-find-us-item i {
     font-size: 36px;
   }
-  main #contact-find-us-container .contact-find-us-block .contact-find-us-item h2 {
+  main #contact_find_us_container .contact-find-us-block .contact-find-us-item h2 {
     font-size: 16px;
   }
-  main #contact-find-us-container .contact-find-us-block .contact-find-us-item a {
+  main #contact_find_us_container .contact-find-us-block .contact-find-us-item a {
     font-size: 14px;
   }
   footer .footer-block {
@@ -875,68 +880,68 @@ footer .footer-block p:first-child {
   main #registration_container .registration-form-block form .checkbox {
     width: 320px;
   }
-  main #site-development-container .site-development-block .site-dev-content {
+  main #site_development_container .site-development-block .site-dev-content {
     width: 320px;
   }
-  main #site-development-container .site-development-block .site-dev-content .dev-content-item hr {
+  main #site_development_container .site-development-block .site-dev-content .dev-content-item hr {
     width: 250px;
   }
-  main #statistic-container .statistick-content-block {
+  main #statistic_container .statistick-content-block {
     width: 400px;
     margin: 30px 0;
   }
-  main #statistic-container .statistick-content-block .statistick-item {
+  main #statistic_container .statistick-content-block .statistick-item {
     width: 140px;
     margin: 5px;
   }
-  main #statistic-container .statistick-content-block .statistick-item h1 {
+  main #statistic_container .statistick-content-block .statistick-item h1 {
     font-size: 18px;
     margin: 5px;
   }
-  main #statistic-container .statistick-content-block .statistick-item p {
+  main #statistic_container .statistick-content-block .statistick-item p {
     margin-bottom: 10px;
   }
-  main #student-feedback-container .student-feedback-content h1 {
+  main #student_feedback_container .student-feedback-content h1 {
     font-size: 22px;
     text-align: center;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content {
+  main #student_feedback_container .student-feedback-content .feedback-content {
     width: 320px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content .slick-dots {
+  main #student_feedback_container .student-feedback-content .feedback-content .slick-dots {
     width: 300px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item blockquote {
+  main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item blockquote {
     width: 250px;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-left {
+  main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-left {
     left: -43%;
   }
-  main #student-feedback-container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-right {
+  main #student_feedback_container .student-feedback-content .feedback-content .feedback-content-item .fa-quote-right {
     left: 43%;
   }
-  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item img {
+  main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item img {
     height: 150px;
     width: 150px;
   }
-  main #mentors-slider-container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text h2 {
+  main #mentors_slider_container .mentors-slider-block .mentors-content .mentors-content-item .mentors-content-item-text h2 {
     margin: 15px 0 5px 0;
   }
-  main #contact-find-us-container .contact-find-us-block {
+  main #contact_find_us_container .contact-find-us-block {
     width: 320px;
     padding: 50px 0;
   }
-  main #contact-find-us-container .contact-find-us-block .contact-find-us-item {
+  main #contact_find_us_container .contact-find-us-block .contact-find-us-item {
     width: 160px;
   }
-  main #contact-find-us-container .contact-find-us-block .contact-find-us-item i {
+  main #contact_find_us_container .contact-find-us-block .contact-find-us-item i {
     font-size: 36px;
   }
-  main #contact-find-us-container .contact-find-us-block .contact-find-us-item h2 {
+  main #contact_find_us_container .contact-find-us-block .contact-find-us-item h2 {
     font-size: 16px;
     margin-top: 10px;
   }
-  main #contact-find-us-container .contact-find-us-block .contact-find-us-item a {
+  main #contact_find_us_container .contact-find-us-block .contact-find-us-item a {
     font-size: 12px;
     margin-top: 5px;
   }
@@ -967,15 +972,15 @@ footer .footer-block p:first-child {
   main #registration_container .registration-form-block form .checkbox {
     width: 270px;
   }
-  main #statistic-container .statistick-content-block {
+  main #statistic_container .statistick-content-block {
     width: 320px;
     margin: 20px 0;
   }
-  main #statistic-container .statistick-content-block .statistick-item {
+  main #statistic_container .statistick-content-block .statistick-item {
     width: 150px;
     margin: 0;
   }
-  main #statistic-container .statistick-content-block .statistick-item p {
+  main #statistic_container .statistick-content-block .statistick-item p {
     font-size: 14px;
     margin-bottom: 10px;
   }
