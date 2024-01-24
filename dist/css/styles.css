@@ -495,6 +495,25 @@ main #contact-find-us-container .contact-find-us-block .contact-find-us-item a {
   font-weight: 200;
 }
 
+footer .footer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+footer .footer-block a {
+  color: #7f7f7f;
+  text-decoration: none;
+}
+footer .footer-block a:hover {
+  text-decoration: underline;
+}
+footer .footer-block p:first-child {
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
 @media screen and (max-width: 1250px) {
   header {
     z-index: 3;
@@ -839,6 +858,9 @@ main #contact-find-us-container .contact-find-us-block .contact-find-us-item a {
   main #contact-find-us-container .contact-find-us-block .contact-find-us-item a {
     font-size: 14px;
   }
+  footer .footer-block {
+    padding: 40px 0;
+  }
 }
 @media screen and (max-width: 450px) {
   main #registration_container .registration-form-block form {
@@ -912,10 +934,18 @@ main #contact-find-us-container .contact-find-us-block .contact-find-us-item a {
   }
   main #contact-find-us-container .contact-find-us-block .contact-find-us-item h2 {
     font-size: 16px;
+    margin-top: 10px;
   }
   main #contact-find-us-container .contact-find-us-block .contact-find-us-item a {
     font-size: 12px;
     margin-top: 5px;
+  }
+  footer .footer-block {
+    padding: 30px 0;
+    font-size: 14px;
+  }
+  footer .footer-block p:first-child {
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 340px) {
