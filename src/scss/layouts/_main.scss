@@ -1,0 +1,19 @@
+main {
+  flex-grow: 1;
+
+  @import "./containers/registration";
+
+  @import "./containers/site_development";
+
+  @import "./containers/statistic";
+
+  @import "./containers/student_feedback";
+
+  @import "./containers/video";
+
+  @import "./containers/mentors";
+
+  @import "./containers/map_location";
+
+  @import "./containers/contact_find_us";
+}

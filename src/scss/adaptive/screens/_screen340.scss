@@ -1,0 +1,38 @@
+@media screen and (max-width: 340px) {
+  main {
+    #registration_container {
+      padding-bottom: 30px;
+      .registration-form-block {
+        margin-bottom: 0;
+        form {
+          align-items: center;
+
+          h2 {
+            font-size: 21px;
+          }
+          input {
+            width: 240px;
+          }
+          .checkbox {
+            width: 270px;
+          }
+        }
+      }
+    }
+    #statistic_container {
+      .statistick-content-block {
+        width: 320px;
+        margin: 20px 0;
+        .statistick-item {
+          width: 150px;
+          margin: 0;
+
+          p {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

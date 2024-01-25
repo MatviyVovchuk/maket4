@@ -1,0 +1,94 @@
+@media screen and (max-width: 1250px) {
+  header {
+    z-index: 3;
+    .header-content {
+      width: 95%;
+      padding: 0;
+      .main-menu {
+        .menu-nav {
+          .menu-ul {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  main {
+    #registration_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .registration-form-block {
+        margin: 40px 0;
+      }
+    }
+    #site_development_container {
+      .site-development-block {
+        padding: 50px 0px;
+
+        h1 {
+          font-size: 26px;
+        }
+
+        .site-dev-content {
+          width: 950px;
+
+          .dev-content-item {
+            h2 {
+              text-align: center;
+              font-weight: 500;
+            }
+            hr {
+              margin-top: 15px;
+              margin-bottom: 25px;
+              width: 260px;
+            }
+          }
+        }
+      }
+    }
+    #statistic_container {
+      .statistick-content-block {
+        width: 1000px;
+
+        .statistick-item {
+          width: 250px;
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+    #video_container {
+      .video-block {
+        width: 95%;
+      }
+    }
+    #mentors_slider_container {
+      .mentors-slider-block {
+        width: 95%;
+
+        .mentors-content {
+          .mentors-content-item {
+            img {
+              width: 280px;
+              height: 280px;
+            }
+            .mentors-content-item-text {
+              width: 95%;
+              p {
+                width: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    #contact_find_us_container {
+      .contact-find-us-block {
+        width: 95%;
+      }
+    }
+  }
+}

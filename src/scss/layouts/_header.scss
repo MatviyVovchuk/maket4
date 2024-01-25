@@ -1,0 +1,120 @@
+header {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+
+  .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1220px;
+    padding: 0 15px;
+
+    .main-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .logo-image {
+        height: 80px;
+        width: 80px;
+        margin: 10px 0;
+      }
+      .menu-ul {
+        display: flex;
+        list-style-type: none;
+        font-size: 16px;
+        // margin-left: 300px;
+      }
+      a {
+        text-decoration: none;
+        padding: 10px 20px 10px 20px;
+        color: #6a6a6a;
+        // border-radius: 30px;
+        transition: color 0.4s, background-color 0.4s, box-shadow 0.4s;
+      }
+      a:hover {
+        color: #367cb8;
+        background-color: #eeeeee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      //li:last-child a
+      .submit-application {
+        color: #ffffff;
+        border-radius: 30px;
+        font-weight: bold;
+        background-color: #337ab7;
+      }
+      //li:last-child a:hover
+      .submit-application:hover {
+        color: #265a88;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .menu-burger {
+        display: none;
+        position: relative;
+        align-items: center;
+        justify-content: start;
+        width: 22px;
+        height: 12px;
+        padding: 10px;
+        background-color: #337ab7;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .menu-burger span {
+        height: 2px;
+        width: 22px;
+        transform: scale(1);
+        background-color: #fcfcfc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu-burger::before,
+      .menu-burger::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 22px;
+        margin: 10px 0;
+        background-color: #fcfcfc;
+        transition: all 0.3s ease 0s;
+      }
+
+      .menu-burger::before {
+        top: -2px;
+      }
+
+      .menu-burger::after {
+        bottom: -2px;
+      }
+
+      .menu-burger.active span {
+        transform: scale(0);
+      }
+
+      .menu-burger.active::before {
+        top: 5.5px;
+        transform: rotate(-45deg) translate(0, -50%);
+      }
+
+      .menu-burger.active::after {
+        bottom: 5.5px;
+        transform: rotate(45deg) translate(0, 50%);
+      }
+    }
+  }
+}

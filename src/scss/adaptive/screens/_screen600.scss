@@ -1,0 +1,116 @@
+@media screen and (max-width: 600px) {
+  header {
+    height: 70px;
+
+    .header-content {
+      .main-menu {
+        .logo-image {
+          width: 60px;
+          height: 60px;
+          margin: 5px 0;
+        }
+        .menu-burger {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  main {
+    #registration_container {
+      .registration-information-block {
+        width: 95%;
+        margin-bottom: 20px;
+
+        h1 {
+          font-size: 22px;
+        }
+        p {
+          width: auto;
+        }
+      }
+    }
+    #site_development_container {
+      .site-development-block {
+        h1 {
+          font-size: 22px;
+        }
+        .site-dev-content {
+          width: 400px;
+
+          .dev-content-item {
+            height: auto;
+            margin-top: 10px;
+
+            hr {
+              width: 350px;
+            }
+          }
+        }
+      }
+    }
+    #statistic_container {
+      .statistick-content-block {
+        .statistick-item {
+          h1 {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    #student_feedback_container {
+      .student-feedback-content {
+        h1 {
+          font-size: 22px;
+        }
+        .feedback-content {
+          width: 450px;
+          .slick-dots {
+            width: 430px;
+          }
+          .feedback-content-item {
+            blockquote {
+              width: 400px;
+            }
+          }
+        }
+      }
+    }
+    #mentors_slider_container {
+      .mentors-slider-block {
+        .mentors-content {
+          .mentors-content-item {
+            img {
+              height: 200px;
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+    #contact_find_us_container {
+      .contact-find-us-block {
+        width: 400px;
+        padding: 50px 0;
+
+        .contact-find-us-item {
+          width: 200px;
+
+          i {
+            font-size: 36px;
+          }
+          h2 {
+            font-size: 16px;
+          }
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .footer-block {
+      padding: 40px 0;
+    }
+  }
+}

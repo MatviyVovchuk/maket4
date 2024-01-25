@@ -1,0 +1,127 @@
+@media screen and (max-width: 450px) {
+  main {
+    #registration_container {
+      .registration-form-block {
+        form {
+          align-items: center;
+
+          input {
+            width: 280px;
+          }
+          button {
+            width: 280px;
+          }
+          .checkbox {
+            width: 320px;
+          }
+        }
+      }
+    }
+    #site_development_container {
+      .site-development-block {
+        .site-dev-content {
+          width: 320px;
+
+          .dev-content-item {
+            hr {
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
+    #statistic_container {
+      .statistick-content-block {
+        width: 400px;
+        margin: 30px 0;
+        .statistick-item {
+          width: 140px;
+          margin: 5px;
+
+          h1 {
+            font-size: 18px;
+            margin: 5px;
+          }
+          p {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    #student_feedback_container {
+      .student-feedback-content {
+        h1 {
+          font-size: 22px;
+          text-align: center;
+        }
+        .feedback-content {
+          width: 320px;
+          .slick-dots {
+            width: 300px;
+          }
+          .feedback-content-item {
+            blockquote {
+              width: 250px;
+              // font-size: 14px;
+            }
+            .fa-quote-left {
+              left: -43%;
+            }
+            .fa-quote-right {
+              left: 43%;
+            }
+          }
+        }
+      }
+    }
+    #mentors_slider_container {
+      .mentors-slider-block {
+        .mentors-content {
+          .mentors-content-item {
+            img {
+              height: 150px;
+              width: 150px;
+            }
+            .mentors-content-item-text {
+              h2 {
+                margin: 15px 0 5px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    #contact_find_us_container {
+      .contact-find-us-block {
+        width: 320px;
+        padding: 50px 0;
+
+        .contact-find-us-item {
+          width: 160px;
+
+          i {
+            font-size: 36px;
+          }
+          h2 {
+            font-size: 16px;
+            margin-top: 10px;
+          }
+          a {
+            font-size: 12px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .footer-block {
+      padding: 30px 0;
+      font-size: 14px;
+
+      p:first-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@media screen and (max-width: 750px) {
+  header {
+    height: 90px;
+
+    .header-content {
+      .main-menu {
+        .logo-image {
+          width: 70px;
+          height: 70px;
+        }
+        .menu-burger {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  main {
+    #registration_container {
+      .registration-information-block {
+        width: 80%;
+        margin-bottom: 20px;
+
+        h1 {
+          font-size: 26px;
+        }
+        p {
+          width: auto;
+        }
+      }
+      .registration-form-block {
+        form {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+
+          h2 {
+            align-self: center;
+            font-size: 22px;
+          }
+          label {
+            text-align: left;
+            font-size: 14px;
+          }
+          input {
+            width: 400px;
+          }
+        }
+      }
+    }
+    #statistic_container {
+      .statistick-content-block {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 500px;
+        margin: 30px 0;
+        .statistick-item {
+          width: 180px;
+          margin: 10px;
+
+          h1 {
+            font-size: 26px;
+            margin: 5px;
+          }
+          p {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    #student_feedback_container {
+      .student-feedback-content {
+        .feedback-content {
+          width: 600px;
+          .slick-dots {
+            width: 570px;
+          }
+          .feedback-content-item {
+            blockquote {
+              width: 500px;
+            }
+          }
+        }
+      }
+    }
+    #contact_find_us_container {
+      .contact-find-us-block {
+        flex-wrap: wrap;
+        width: 500px;
+
+        .contact-find-us-item {
+          width: 250px;
+        }
+        .contact-find-us-item:nth-child(-n + 2) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

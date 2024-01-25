@@ -3074,13 +3074,10 @@ $(document).ready(function () {
 
     if (screenWidth < 600) {
       slidesToShow = 1;
-      console.log(slidesToShow);
     } else if (screenWidth < 850) {
       slidesToShow = 2;
-      console.log(slidesToShow);
     } else if (itemCount > 3) {
       slidesToShow = 3;
-      console.log(slidesToShow + " " + itemCount);
     }
 
     $siteDevContent.slick({
@@ -3194,7 +3191,7 @@ $(document).ready(function () {
     if (!validateLastName()) {
       isFormValid = false;
     }
-    if (!validateIntresting()) {
+    if (!validateIntreating()) {
       isFormValid = false;
     }
     if (!validatePhone()) {
@@ -3203,19 +3200,10 @@ $(document).ready(function () {
     if (!validateEmail()) {
       isFormValid = false;
     }
-    if (!validateMessage()) {
-      isFormValid = false;
-    }
 
     if (!isFormValid) {
       event.preventDefault();
     }
-
-    // Check field one by one
-    // if (!validateName() || !validatePhone() || !validateEmail()) {
-    //   event.preventDefault();
-    //   console.log("NOT VALID");
-    // }
 
     // Uncomment the line below to submit the form or remove event.preventDefault();
     // $(this).unbind('submit').submit();
@@ -3266,8 +3254,6 @@ $(document).ready(function () {
     const phoneField = $("#field_phone");
     const phoneValue = phoneField.val().replace(/\D/g, ""); // Remove non-numeric characters
 
-    console.log(phoneField.val().replace(/\D/g, ""));
-
     if (phoneValue === "") {
       setValidationError(phoneField, "Введіть номер телефону.");
       return false;
@@ -3282,13 +3268,13 @@ $(document).ready(function () {
     return true;
   }
 
-  function validateIntresting() {
+  function validateIntreating() {
     const interestingField = $("#field_interesting");
     const interestingValue = interestingField.val().trim();
 
     if (interestingValue.length < 2 || interestingValue.length > 25) {
       setValidationError(
-        nameField,
+        interestingField,
         "Поле повинно містити від 2 до 25 символів."
       );
       return false;
@@ -3320,18 +3306,6 @@ $(document).ready(function () {
   function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
-  }
-
-  function validateMessage() {
-    const messageField = $("#field_message");
-    const messageValue = messageField.val().trim();
-
-    if (messageValue === "") {
-      setValidationError(messageField, "Поле не може бути порожнім.");
-      return false;
-    }
-
-    return true;
   }
 
   function setValidationError(element, message) {

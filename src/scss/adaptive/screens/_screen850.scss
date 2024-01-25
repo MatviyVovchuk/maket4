@@ -1,0 +1,65 @@
+@media screen and (max-width: 850px) {
+  main {
+    #site_development_container {
+      .site-development-block {
+        h1 {
+          margin-bottom: 40px;
+        }
+        .site-dev-content {
+          width: 600px;
+
+          .dev-content-item {
+            height: auto;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+    #statistic_container {
+      .statistick-content-block {
+        width: 750px;
+        padding: 0;
+        .statistick-item {
+          margin: 30px 10px;
+          width: 187.5px;
+        }
+      }
+    }
+    #student_feedback_container {
+      .student-feedback-content {
+        .feedback-content {
+          width: 700px;
+          .slick-dots {
+            width: 670px;
+          }
+          .feedback-content-item {
+            blockquote {
+              width: 600px;
+            }
+          }
+        }
+      }
+    }
+    #mentors_slider_container {
+      .mentors-slider-block {
+        padding: 0;
+        .mentors-content {
+          .mentors-content-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .mentors-content-item-text {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 0;
+              p {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
