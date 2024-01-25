@@ -29,7 +29,9 @@
       }
       .registration-form-block {
         form {
-          @include flex-justify-center;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
 
           h2 {
             align-self: center;
@@ -70,7 +72,7 @@
       .student-feedback-content {
         .feedback-content {
           width: 600px;
-          
+
           .slick-dots {
             width: 570px;
           }

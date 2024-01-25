@@ -168,7 +168,7 @@ main #registration_container .registration-form-block {
 main #registration_container .registration-form-block form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 main #registration_container .registration-form-block form h2 {
   font-size: 1.3em;
@@ -741,8 +741,8 @@ footer .footer-block p:first-child {
   }
   main #registration_container .registration-form-block form {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
   }
   main #registration_container .registration-form-block form h2 {
     align-self: center;
