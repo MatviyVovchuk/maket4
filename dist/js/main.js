@@ -75,7 +75,6 @@ $(document).ready(function () {
     slidesToShow: 1,
     arrows: false,
     dots: true,
-    // adaptiveHeight: true,
     slidesToScroll: 1,
     infinite: true,
     initialSlide: 0,
@@ -89,7 +88,6 @@ $(document).ready(function () {
     slidesToShow: 1,
     arrows: false,
     dots: true,
-    // adaptiveHeight: true,
     slidesToScroll: 1,
     infinite: true,
     initialSlide: 0,
@@ -150,6 +148,7 @@ $(document).ready(function () {
 
     // Uncomment the line below to submit the form or remove event.preventDefault();
     // $(this).unbind('submit').submit();
+    console.log("ALL DATA VALID! FORM SUCCESSFULLY SENT!")
     event.preventDefault();
   });
 
