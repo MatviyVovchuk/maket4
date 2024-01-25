@@ -1,12 +1,8 @@
 #student_feedback_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-justify-center;
 
   .student-feedback-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     margin-top: 20px;
 
     h1 {
@@ -14,12 +10,13 @@
       font-weight: 400;
       margin-top: 30px;
       margin-bottom: 10px;
-      color: #333333;
+      color: $h-gray-text;
     }
     .feedback-content {
       width: 900px;
       padding: 0 15px;
       margin-bottom: 30px;
+      
       .slick-dots li button:before {
         font-size: 12px;
         margin-top: 10px;
@@ -28,10 +25,8 @@
         width: 870px;
       }
       .feedback-content-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #7f7f7f;
+        @include flex-column-center;
+        color: $gray-text;
 
         blockquote {
           quotes: none;
@@ -41,7 +36,7 @@
         }
         i {
           font-size: 28px;
-          color: #c4c4c4;
+          color: $quote-color;
         }
         .fa-quote-left {
           position: relative;
@@ -57,7 +52,7 @@
           margin-bottom: 10px;
         }
         p {
-          color: #333333;
+          color: $h-gray-text;
         }
       }
     }

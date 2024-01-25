@@ -1,22 +1,14 @@
 #video_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-justify-center;
   margin: 30px 0;
-  background-color: #f7f7f7;
+  background-color: $gray-container-backgroud;
 
   .video-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    width: 1200px;
-    padding: 50px 15px;
+    @include flex-column-center;
+    @include set-container-width;
 
     .video-block-text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-center;
 
       h1 {
         padding-bottom: 20px;
@@ -26,7 +18,7 @@
         width: 95%;
         text-align: center;
         padding-bottom: 20px;
-        color: #7f7f7f;
+        color: $gray-text;
       }
     }
     .video-block-video {

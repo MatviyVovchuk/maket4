@@ -19,6 +19,7 @@
       .statistick-content-block {
         width: 750px;
         padding: 0;
+
         .statistick-item {
           margin: 30px 10px;
           width: 187.5px;
@@ -29,6 +30,7 @@
       .student-feedback-content {
         .feedback-content {
           width: 700px;
+
           .slick-dots {
             width: 670px;
           }
@@ -43,16 +45,15 @@
     #mentors_slider_container {
       .mentors-slider-block {
         padding: 0;
+
         .mentors-content {
           .mentors-content-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-column-center;
+
             .mentors-content-item-text {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
+              @include flex-column-center;
               padding: 0;
+
               p {
                 text-align: center;
               }

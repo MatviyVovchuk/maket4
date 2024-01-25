@@ -1,9 +1,11 @@
 @media screen and (max-width: 1250px) {
   header {
     z-index: 3;
+
     .header-content {
       width: 95%;
       padding: 0;
+      
       .main-menu {
         .menu-nav {
           .menu-ul {
@@ -15,9 +17,8 @@
   }
   main {
     #registration_container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-center;
+
       .registration-form-block {
         margin: 40px 0;
       }

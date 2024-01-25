@@ -1,14 +1,10 @@
 #registration_container {
-  background-color: #f7f7f7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: $gray-container-backgroud;
+  @include flex-justify-center;
   padding: 40px 15px;
 
   .registration-information-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     width: 550px;
 
     h1 {
@@ -24,15 +20,11 @@
     }
   }
   .registration-form-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
     margin-left: 60px;
 
     form {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
+      @include flex-column-center;
 
       h2 {
         font-size: 1.3em;
@@ -46,17 +38,17 @@
         padding: 15px;
         width: 600px;
         border-radius: 5px;
-        border: 1px solid #bababa;
+        border: 1px solid $input-border-color;
       }
       input.error {
         border-radius: 2px;
-        border: 1px solid red;
-        box-shadow: inset 0 0 5px red;
+        border: 1px solid $input-error-color;
+        box-shadow: inset 0 0 5px $input-error-color;
       }
       input:focus {
         outline: none;
-        border: 1px solid #337ab7;
-        box-shadow: 0 0 5px rgba(51, 122, 183, 0.5);
+        border: 1px solid $input-focus-border-color;
+        box-shadow: 0 0 5px $input-shadow-color;
       }
       .field-container {
         margin-top: 10px;
@@ -75,7 +67,7 @@
         }
         a {
           text-decoration: none;
-          color: #337ab7;
+          color: $link-text-color;
         }
         a:hover {
           text-decoration: underline;
@@ -83,15 +75,14 @@
       }
       b {
         font-weight: bold;
-        // quotes: none;
         cursor: pointer;
-        color: red;
+        color: $input-error-color;
       }
       button {
         align-self: center;
         margin-top: 20px;
-        color: #ffffff;
-        background-color: #337ab7;
+        color: $white-text;
+        background-color: $button-main-background;
         height: 50px;
         width: 370px;
         font-weight: 500;
@@ -103,8 +94,8 @@
       }
       button:hover {
         color: #337ab7;
-        background-color: #ffffff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-color: $button-main-hover-background;
+        box-shadow: 0 0 10px $black-shadow-03;
       }
     }
   }

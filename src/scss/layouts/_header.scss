@@ -1,26 +1,20 @@
 header {
   position: sticky;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
+  @include flex-column-center;
+  background-color: $white-container-backgroud;
   top: 0;
   height: 100px;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px $black-shadow-05;
   z-index: 1;
 
   .header-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1220px;
+    @include flex-justify-center;
+    width: 1250px;
     padding: 0 15px;
 
     .main-menu {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex-space-between-center;
       width: 100%;
 
       .logo-image {
@@ -32,34 +26,32 @@ header {
         display: flex;
         list-style-type: none;
         font-size: 16px;
-        // margin-left: 300px;
       }
       a {
         text-decoration: none;
         padding: 10px 20px 10px 20px;
-        color: #6a6a6a;
+        color: $menu-a-text;
         // border-radius: 30px;
         transition: color 0.4s, background-color 0.4s, box-shadow 0.4s;
       }
       a:hover {
-        color: #367cb8;
-        background-color: #eeeeee;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: $menu-a-hover-text;
+        background-color: $menu-a-hover-background;
+        box-shadow: 0 0 10px $black-shadow-01;
       }
       //li:last-child a
       .submit-application {
-        color: #ffffff;
+        color: $white-text;
         border-radius: 30px;
         font-weight: bold;
-        background-color: #337ab7;
+        background-color: $button-main-background;
       }
       //li:last-child a:hover
       .submit-application:hover {
-        color: #265a88;
-        background-color: #ffffff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        color: $button-main-background;
+        background-color: $button-main-hover-background;
+        box-shadow: 0 0 10px $black-shadow-03;
       }
-
       .menu-burger {
         display: none;
         position: relative;
@@ -68,21 +60,17 @@ header {
         width: 22px;
         height: 12px;
         padding: 10px;
-        background-color: #337ab7;
+        background-color: $button-main-background;
         border-radius: 4px;
         cursor: pointer;
       }
-
       .menu-burger span {
         height: 2px;
         width: 22px;
         transform: scale(1);
-        background-color: #fcfcfc;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        background-color: $white-container-backgroud;
+        @include flex-column-center;
       }
-
       .menu-burger::before,
       .menu-burger::after {
         content: "";
@@ -90,27 +78,22 @@ header {
         height: 2px;
         width: 22px;
         margin: 10px 0;
-        background-color: #fcfcfc;
+        background-color: $white-container-backgroud;
         transition: all 0.3s ease 0s;
       }
-
       .menu-burger::before {
         top: -2px;
       }
-
       .menu-burger::after {
         bottom: -2px;
       }
-
       .menu-burger.active span {
         transform: scale(0);
       }
-
       .menu-burger.active::before {
         top: 5.5px;
         transform: rotate(-45deg) translate(0, -50%);
       }
-
       .menu-burger.active::after {
         bottom: 5.5px;
         transform: rotate(45deg) translate(0, 50%);

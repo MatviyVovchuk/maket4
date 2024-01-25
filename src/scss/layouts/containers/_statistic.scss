@@ -1,27 +1,21 @@
 #statistic_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #3498db;
+  @include flex-justify-center;
+  background-color: $blue-container-backgroud;
 
   .statistick-content-block {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
-    padding: 50px 15px;
+    @include set-container-width;
 
     .statistick-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-column-center;
       margin: 30px 50px;
-      color: #ffffff;
+      color: $white-text;
 
       h1 {
         margin: 20px;
         font-weight: 400;
       }
-
       p {
         font-weight: 200;
       }

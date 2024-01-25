@@ -1,0 +1,19 @@
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flex-space-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-justify-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin set-container-width {
+  width: 1200px;
+  padding: 50px 15px;
+}
