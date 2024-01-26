@@ -119,6 +119,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#field_phone").inputmask({ mask: "+38 (999) 999-99-99" });
 
+  const placeholderValues = savePlaceholderValues();
+
   // Form submit
   $("#registration_form").on("submit", function (event) {
     clearValidationStyles();
@@ -143,14 +145,45 @@ $(document).ready(function () {
     }
 
     if (!isFormValid) {
+      toastr.error("Форма не надіслена! Не коректні дані!");
       event.preventDefault();
+      return;
     }
+
+    toastr.success("Форма успішно надіслена!");
+    clearForm();
 
     // Uncomment the line below to submit the form or remove event.preventDefault();
     // $(this).unbind('submit').submit();
-    console.log("ALL DATA VALID! FORM SUCCESSFULLY SENT!")
     event.preventDefault();
   });
+
+  // Function to save placeholder values in an array
+  function savePlaceholderValues() {
+    let placeholderValues = [];
+
+    $(
+      "#registration_form input[type=text], #registration_form input[type=email]"
+    ).each(function () {
+      placeholderValues.push($(this).attr("placeholder"));
+    });
+
+    return placeholderValues;
+  }
+
+  // Function to set placeholder values based on the provided array
+  function setPlaceholderValues(placeholderValues) {
+    $(
+      "#registration_form input[type=text], #registration_form input[type=email]"
+    ).each(function (index) {
+      $(this).attr("placeholder", placeholderValues[index]);
+    });
+  }
+
+  function clearForm() {
+    $("#registration_form")[0].reset();
+    setPlaceholderValues(placeholderValues);
+  }
 
   function validateFirstName() {
     const nameField = $("#field_firstname");
