@@ -1,8 +1,15 @@
+// Import the font from CDN
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+// Define the font face
 @font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  src: local('Open Sans'), local('OpenSans'), url('https://fonts.gstatic.com/s/opensans/v20/mem5YaGs126MiZpBA-UN_r8OX-hpKKSTj5PW.woff2') format('woff2');
 }
 
+// Apply the font to your elements
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
