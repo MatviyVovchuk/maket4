@@ -17,41 +17,46 @@ header {
       @include flex-space-between-center;
       width: 100%;
 
-      .logo-image {
-        height: 80px;
-        width: 80px;
-        margin: 10px 0;
+      a {
+        .logo-image {
+          height: 80px;
+          width: 80px;
+          margin: 10px 0;
+        }
       }
+
       .menu-ul {
         display: flex;
         list-style-type: none;
         font-size: 16px;
+
+        a {
+          text-decoration: none;
+          padding: 10px 20px 10px 20px;
+          color: $menu-a-text;
+          // border-radius: 30px;
+          transition: color 0.4s, background-color 0.4s, box-shadow 0.4s;
+        }
+        a:hover {
+          color: $menu-a-hover-text;
+          background-color: $menu-a-hover-background;
+          box-shadow: 0 0 10px $black-shadow-01;
+        }
+        //li:last-child a
+        .submit-application {
+          color: $white-text;
+          border-radius: 30px;
+          font-weight: bold;
+          background-color: $button-main-background;
+        }
+        //li:last-child a:hover
+        .submit-application:hover {
+          color: $button-main-background;
+          background-color: $button-main-hover-background;
+          box-shadow: 0 0 10px $black-shadow-03;
+        }
       }
-      a {
-        text-decoration: none;
-        padding: 10px 20px 10px 20px;
-        color: $menu-a-text;
-        // border-radius: 30px;
-        transition: color 0.4s, background-color 0.4s, box-shadow 0.4s;
-      }
-      a:hover {
-        color: $menu-a-hover-text;
-        background-color: $menu-a-hover-background;
-        box-shadow: 0 0 10px $black-shadow-01;
-      }
-      //li:last-child a
-      .submit-application {
-        color: $white-text;
-        border-radius: 30px;
-        font-weight: bold;
-        background-color: $button-main-background;
-      }
-      //li:last-child a:hover
-      .submit-application:hover {
-        color: $button-main-background;
-        background-color: $button-main-hover-background;
-        box-shadow: 0 0 10px $black-shadow-03;
-      }
+
       .menu-burger {
         display: none;
         position: relative;

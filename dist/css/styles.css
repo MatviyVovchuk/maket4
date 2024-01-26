@@ -51,7 +51,7 @@ header .header-content .main-menu {
   align-items: center;
   width: 100%;
 }
-header .header-content .main-menu .logo-image {
+header .header-content .main-menu a .logo-image {
   height: 80px;
   width: 80px;
   margin: 10px 0;
@@ -61,24 +61,24 @@ header .header-content .main-menu .menu-ul {
   list-style-type: none;
   font-size: 16px;
 }
-header .header-content .main-menu a {
+header .header-content .main-menu .menu-ul a {
   text-decoration: none;
   padding: 10px 20px 10px 20px;
   color: #6a6a6a;
   transition: color 0.4s, background-color 0.4s, box-shadow 0.4s;
 }
-header .header-content .main-menu a:hover {
+header .header-content .main-menu .menu-ul a:hover {
   color: #367cb8;
   background-color: #eeeeee;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-header .header-content .main-menu .submit-application {
+header .header-content .main-menu .menu-ul .submit-application {
   color: #ffffff;
   border-radius: 30px;
   font-weight: bold;
   background-color: #337ab7;
 }
-header .header-content .main-menu .submit-application:hover {
+header .header-content .main-menu .menu-ul .submit-application:hover {
   color: #337ab7;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -722,7 +722,7 @@ footer .footer-block p:first-child {
   header {
     height: 90px;
   }
-  header .header-content .main-menu .logo-image {
+  header .header-content .main-menu a .logo-image {
     width: 70px;
     height: 70px;
   }
@@ -741,8 +741,8 @@ footer .footer-block p:first-child {
   }
   main #registration_container .registration-form-block form {
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
   }
   main #registration_container .registration-form-block form h2 {
     align-self: center;
@@ -796,7 +796,7 @@ footer .footer-block p:first-child {
   header {
     height: 70px;
   }
-  header .header-content .main-menu .logo-image {
+  header .header-content .main-menu a .logo-image {
     width: 60px;
     height: 60px;
     margin: 5px 0;
